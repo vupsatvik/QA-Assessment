@@ -1,6 +1,6 @@
-# QA Engineer Take Home Assessment
+# QA Engineer Assessment
 
-This submission is intentionally scoped as a practical 3-years-experience QA solution: two small, runnable automation examples plus test strategy for the unavailable Android APK and production API. It prioritises risk around data integrity, dynamic forms, offline retries, and usability on budget devices.
+This submission contains two small, runnable automation examples plus test strategy for the Android APK and production API. It prioritises risk around data integrity, dynamic forms, offline retries, and usability on budget devices. I've created this with assistance from the AI tools.
 
 ## Contents
 
