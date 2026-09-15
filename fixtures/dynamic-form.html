@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey fixture</title>
+</head>
+<body>
+  <main>
+    <h1>Student Interests and Hobbies</h1>
+    <label for="has-hobby">Do you have a hobby?</label>
+    <select id="has-hobby" name="q_3" aria-label="Do you have a hobby?">
+      <option value="">Select an answer</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <section id="hobby-follow-up" hidden aria-live="polite">
+      <label for="hobby">What is your hobby?</label>
+      <input id="hobby" name="q_4" type="text" />
+    </section>
+  </main>
+  <script>
+    const answer = document.querySelector('#has-hobby');
+    const followUp = document.querySelector('#hobby-follow-up');
+    answer.addEventListener('change', () => { followUp.hidden = answer.value !== 'Yes'; });
+  </script>
+</body>
+</html>
